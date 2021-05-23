@@ -4,6 +4,11 @@ You can use the [editor on GitHub](https://github.com/necromyhan/MedicalRecord/e
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://github.com/necromyhan/medical-data-storage/blob/main/hospital.html) to rebuild the pages in your site, from the content in your Markdown files.
 
+### Start
+
+Нажмите на кнопку, чтобы начать:
+[Start](https://github.com/necromyhan/MedicalRecord/settings/pages). 
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
@@ -28,9 +33,6 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Mddown](https://necromyhan.github.io/medical-data-storage/hospital.html).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/necromyhan/MedicalRecord/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Support or Contact
 
