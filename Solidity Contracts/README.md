@@ -1,6 +1,6 @@
-# ПРОЕКТ
+# Исходный код смарт-контрактов на Solidity
 
 
 
 
-[medical_record_project](hospital.html)
+
