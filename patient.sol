@@ -38,7 +38,7 @@ contract Patient {
      address owner;
      
       constructor()  public {
-          owner = 0xE6005Cc724c2d44F0aF23d663017a7E375DD7F35; //Address of Hospital
+          owner = 0x0xD84941ce56f6dfCf1e96ADa110d0386e00Ec6a7e; //Address of Hospital
       }
       
       

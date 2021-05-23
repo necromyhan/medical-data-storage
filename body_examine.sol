@@ -60,7 +60,7 @@ system sys;
      * @dev Create the Token by Passing the Name and Symbol to the ERC721 Constructor
      */
       constructor() ERC721("MedicalCoin","MEDC") public {
-          owner = 0x34d8bC94989BbE14BCfd98E0550201ba4970B776; //Address of Doctor
+          owner = 0xD84941ce56f6dfCf1e96ADa110d0386e00Ec6a7e; //Address of Doctor
       }
       
       // modifier to give access only to doctor
