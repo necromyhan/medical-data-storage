@@ -1,4 +1,5 @@
 body {
   background-color: lightblue;
   p { font: 12px/14px sans-serif }
+  .h2 {font-family: "Times New Roman", Times, serif;}
 }
