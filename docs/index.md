@@ -26,7 +26,7 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://necromyhan.github.io/medical-data-storage/hospital.html).
+For more details see [GitHub Flavored Mddown](https://necromyhan.github.io/medical-data-storage/hospital.html).
 
 ### Jekyll Themes
 
