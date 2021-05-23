@@ -72,7 +72,7 @@ struct treat{
      */
       constructor() ERC721("AmritaMedicalCoin","AMC") public {
           
-          owner = 0x34d8bC94989BbE14BCfd98E0550201ba4970B776; //Address of Doctor
+          owner = 0xD84941ce56f6dfCf1e96ADa110d0386e00Ec6a7e; //Address of Doctor
           
       }
       
