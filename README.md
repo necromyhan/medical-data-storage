@@ -1,6 +1,6 @@
-# ПРОЕКТ
+# Цифровое хранилище медицинских персональных данных
 
 
 
 
-[medical_record_project](hospital.html)
+[Начать использовать](hospital.html)
