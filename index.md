@@ -7,7 +7,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://g
 ### Start
 
 Нажмите на кнопку, чтобы начать:
-[Start](https://github.com/necromyhan/MedicalRecord/settings/pages). 
+[Start](https://necromyhan.github.io/medical-data-storage/hospital.html). 
 
 ### Markdown
 
@@ -30,10 +30,5 @@ Syntax highlighted code block
 
 [Link](url) and ![Image](src)
 ```
-
-For more details see [GitHub Flavored Mddown](https://necromyhan.github.io/medical-data-storage/hospital.html).
-
-
-### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
