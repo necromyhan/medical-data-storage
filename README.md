@@ -3,4 +3,4 @@
 
 
 
-[Начать использовать](hospital.html)
+[Цифровое хранилище](https://necromyhan.github.io/medical-data-storage/)
