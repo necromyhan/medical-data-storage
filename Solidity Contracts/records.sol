@@ -5,7 +5,7 @@ pragma solidity >=0.4.22 <0.7.0;
  */
  import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol";
  
-  //contract address 0xbeBcd38E49bd93B0c12eC8692faF41726F28b896
+  //contract address 0x5CF863867c6008131e1f336dfe6Ac9aeA273E60F
  
 contract Records is ERC721 {
     mapping(uint256 => insurance) insurancelist;

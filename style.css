@@ -1,7 +1,6 @@
 body {
   background-color: lightblue;
-  h1 { 
-  font-family: Arial; 
-  }
+  font: 16px Arial, sans-serif;
+
   
 }
