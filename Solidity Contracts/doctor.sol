@@ -4,7 +4,7 @@ pragma solidity >=0.4.22 <0.7.0;
  * @dev Store & retreive Doctor details 
  */
  
- 
+ //contract address 0x6d49C6136Eb45E2815d3E7c73f41Ed12CB45DD54
 contract Doctor {
    
      
@@ -22,8 +22,8 @@ contract Doctor {
      
    
       constructor()  public {
-          owner = 0x0xD84941ce56f6dfCf1e96ADa110d0386e00Ec6a7e; //Address of Hospital
-      }
+          owner = 0xD84941ce56f6dfCf1e96ADa110d0386e00Ec6a7e; //Address of Hospital
+      }             
       
      // modifier to give access only to hospital
        modifier isOwner() {
