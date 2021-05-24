@@ -5,6 +5,8 @@ pragma solidity >=0.4.22 <0.7.0;
  */
  import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol";
  
+ // address 0xa31AecE411fadEF8Be505fF0d6100269Af9cF77e
+ 
 contract Body_Examine is ERC721 {
     mapping(uint256 => tests) patienttests;
     mapping(uint256 => scan) scantests;
