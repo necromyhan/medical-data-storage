@@ -4,6 +4,7 @@ pragma solidity >=0.4.22 <0.7.0;
  * @dev Store & retreive patient details 
  */
 
+ //contract address 0x7a54359129bAfdD63e8D67D4004290D7063191D2
  
 contract Patient {
     
@@ -38,7 +39,7 @@ contract Patient {
      address owner;
      
       constructor()  public {
-          owner = 0x0xD84941ce56f6dfCf1e96ADa110d0386e00Ec6a7e; //Address of Hospital
+          owner = 0xD84941ce56f6dfCf1e96ADa110d0386e00Ec6a7e; //Address of Hospital
       }
       
       
