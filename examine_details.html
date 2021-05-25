@@ -1,10 +1,16 @@
 <link rel="stylesheet" type="text/css" href="https://necromyhan.github.io/medical-data-storage/style.css">
 <html>
 <head>
-<title>Patient body examine details</title>
+<title>Результаты обследования</title>
 </head>
     <body>
-	<p><a href="hospital.html"><button type="submit" class="hidden" style='margin-right:16px'>Hospital Registration</button></a><a href="doctor.html"><button type="submit" class="hidden" style='margin-right:16px'>Doctor Registration</button></a><a href="patient.html"><button type="submit" class="hidden" style='margin-right:16px'>Patient Registration</button></a><a href="patient_details.html"><button type="submit" class="hidden" style='margin-right:16px'>View Patient Details</button></a><a href="record_details.html"><button type="submit" class="hidden" style='margin-right:16px'>View Medical Record</button></a></p>
+		
+	<div class="header">
+		<h1>Цифровое хранилище медицинских данных на базе блокчейн</h1>
+		<p>Диагностический центр №1</p>
+	</div>
+	
+	<p><a href="hospital.html"><button type="submit" class="hidden" style='margin-right:16px'>Регистрация отделения</button></a><a href="doctor.html"><button type="submit" class="hidden" style='margin-right:16px'>Регистрация врача</button></a><a href="patient.html"><button type="submit" class="hidden" style='margin-right:16px'>Регистрация пациента</button></a><a href="patient_details.html"><button type="submit" class="hidden" style='margin-right:16px'>Просмотр информации о пациенте</button></a><a href="record_details.html"><button type="submit" class="hidden" style='margin-right:16px'>Просмотр записей пациентов</button></a></p>
       
         
         <script src="https://cdn.jsdelivr.net/npm/web3@1.2.8/dist/web3.js"></script>
@@ -871,122 +877,122 @@
 		
 		
         </script>
-		<h3>To update details of a patient body examine  <a href="patient_examine.html">Click Here</a></h3> 
+		<h3>Для обновления результатов обследования  <a href="patient_examine.html">нажмите здесь</a></h3> 
 
-<h3>Previous dates of medical record updated</h3>
+<h3>Даты предыдущих обновлений результатов обследования</h3>
         <form>
 		<table style="width:25%">
 		  <tr>
-			<td>Enter Patient Id:</td>
+			<td>Введитие идентификатор пацинета:</td>
 			<td><input type="text" id="tid1" name="tid1"></td>
 		  </tr>
-		  <tr><td><input type="button" onclick="date_details()" value="Get Details"></td></tr>
+		  <tr><td><input type="button" onclick="date_details()" value="Получить информацию"></td></tr>
             <tr>
-			<td> Dates:</td>
+			<td> Дата:</td>
 			<td><div id="get_dates1"></div></td>
 		  </tr>
 		  
 		</table>
         </form>  
-		<h2>Patient Body Examine Details</h2>
+		<h2>Результаты обследования</h2>
         <tr>
-			<td>Enter Record Id:</td>
+			<td>Введитие идентификатор пацинета:</td>
 			<td><input type="text" id="tid" name="tid"></td>
 		  </tr>
 		  
-		 <tr><td><input type="button" onclick="get_details()" value="Get Details"></td></tr>
-        <h2>Investigations</h2>
+		 <tr><td><input type="button" onclick="get_details()" value="Получить информацию"></td></tr>
+        <h2>Анализы</h2>
     <form>
 		<table style="width:35%"> 
             
             <tr>
-			<td> Blood Test:</td>
+			<td>Анализ крови:</td>
 			<td><div id="get_blood"></div></td>
 		  </tr>
 		  <tr>
-			<td>Urine Test:</td>
+			<td>Анализ мочи:</td>
 			<td><div id="get_uri"></div></td>
 		  </tr>		   
 		   <tr>
-			<td>ECG:</td>
+			<td>ЭКГ:</td>
 			<td><div id="get_ecg"></div></td>
 		  </tr>
             <tr>
-			<td>MRI Scan:</td>
+			<td>МРТ:</td>
 			<td><div id="get_mri"></div></td>
 		  </tr>
 		  <tr>
-			<td>CT Scan:</td>
+			<td>Компьютерная томография:</td>
 			<td><div id="get_ct"></div></td>
 		  </tr> 
 		   <tr>
-			<td>X-ray:</td>
+			<td>Флюрография:</td>
 			<td><div id="get_xray"></div></td>
 		  </tr>
 		   <tr>
-			<td>Lab Test(if any other):</td>
+			<td>Другие лабораторные исследования:</td>
 			<td><div id="get_lab"></div></td>
 		  </tr>
 		</table>
 		
 		
 	</form>
-	<h2> General Examination</h2>
+	<h2>Физическая диагностика</h2>
     <form>
 		<table style="width:25%"> 
             
             <tr>
-			<td>Built:</td>
+			<td>Тип телосложения:</td>
 			<td><div id="get_built"></div></td>
 		  </tr>
 		  <tr>
-			<td>Nourishment:</td>
+			<td>Питание:</td>
 			<td><div id="get_nou"></div></td>
 		  </tr>
 		  <tr>
-			<td>Eyes:</td>
+			<td>Глаза:</td>
 			<td><div id="get_eyes"></div></td>
 		  </tr>
 		  <tr>
-			<td>Tongue:</td>
+			<td>Язык:</td>
 			<td><div id="get_ton"></div></td>
 		  </tr>
 		  <tr>
-			<td>Pulse:</td>
+			<td>Пульс:</td>
 			<td><div id="get_pulse"></div></td>
 		  </tr>
 		  <tr>
-			<td>Blood Pressure:</td>
+			<td>Давление:</td>
 			<td><div id="get_bp"></div></td>
 		  </tr>
 		  <tr>
-			<td>Temperature:</td>
+			<td>Темпертура:</td>
 			<td><div id="get_temp"></div></td>
 		  </tr>
 		  <tr>
-			<td>Respiratory rate:</td>
+			<td>Частота дыхания:</td>
 			<td><div id="get_res"></div></td>
 		  </tr>
 		</table>
 	</form>
-	<h2> Systemic Examination</h2>
+	<h2>Систематическиая диагностика</h2>
     <form>
 		<table style="width:25%"> 
            
             <tr>
-			<td> CVS:</td>
+			<td>Центральная нервная система:</td>
 			<td><div id="get_cvs"></div></td>
 		  </tr>
 		  <tr>
-			<td>CNS:</td>
+			<td>Система кровообращения:</td>
 			<td><div id="get_cns"></div></td>
 		  </tr>
 		  <tr>
-			<td>RS:</td>
+			<td>Дыхательная система:</td>
 			<td><div id="get_rs"></div></td>
 		  </tr>
 		   <tr>
-			<td>Abdomen system:</td>
+			<td>Желудочно-кишечный тракт:</td>
 			<td><div id="get_abs"></div></td>
 		  </tr>
 		  </table>

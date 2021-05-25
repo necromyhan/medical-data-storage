@@ -1,10 +1,16 @@
 <link rel="stylesheet" type="text/css" href="https://necromyhan.github.io/medical-data-storage/style.css">
 <html>
 <head>
-<title>Patient Medical Record</title>
+<title>Просмотр записей пациентов</title>
 </head>
     <body>
-	<p><a href="hospital.html"><button type="submit" class="hidden" style='margin-right:16px'>Hospital Registration</button></a><a href="doctor.html"><button type="submit" class="hidden" style='margin-right:16px'>Doctor Registration</button></a><a href="patient.html"><button type="submit" class="hidden" style='margin-right:16px'>Patient Registration</button></a><a href="patient_details.html"><button type="submit" class="hidden" style='margin-right:16px'>View Patient Details</button></a><a href="record_details.html"><button type="submit" class="hidden" style='margin-right:16px'>View Medical Record</button></a><a href="examine_details.html"><button type="submit" class="hidden" style='margin-right:16px'>View Patient Examine details</button></a></p>
+			
+	<div class="header">
+		<h1>Цифровое хранилище медицинских данных на базе блокчейн</h1>
+		<p>Диагностический центр №1</p>
+	</div>
+	
+	<p><a href="hospital.html"><button type="submit" class="hidden" style='margin-right:16px'>Регистрация отделения</button></a><a href="doctor.html"><button type="submit" class="hidden" style='margin-right:16px'>Регистрация врача</button></a><a href="patient.html"><button type="submit" class="hidden" style='margin-right:16px'>Регистрация пациента</button></a><a href="patient_details.html"><button type="submit" class="hidden" style='margin-right:16px'>Просмотр информации о пациентах</button></a><a href="record_details.html"><button type="submit" class="hidden" style='margin-right:16px'>Просмотр записей пациентов</button></a><a href="examine_details.html"><button type="submit" class="hidden" style='margin-right:16px'>Результаты обследований</button></a></p>
       
         <h1>Patient Medical Record </h1>
         <script src="https://cdn.jsdelivr.net/npm/web3@1.2.8/dist/web3.js"></script>
@@ -934,48 +940,48 @@
 		
         </script>
 
-       <h2>Previous dates of medical record updated</h2>
+       <h2>Даты предыдущих обновлений результатов обследования</h2>
     <form>
 		<table style="width:25%"> 
             <tr>
-			<td>Enter Patient Id:</td>
+			<td>Введите идентификато пациента:</td>
 			<td><input type="text" id="id0" name="id0"></td>
 		  </tr>
             <tr>
-			<td> Dates:</td>
+			<td>Дата:</td>
 			<td><input type="text" id="dates1" name="dates1"></td>
 		  </tr>
 		  <tr>			
-		  <td><input type="button" onclick="prev_details()" value="Submit"></td>
+		  <td><input type="button" onclick="prev_details()" value="Отправить"></td>
 		  </tr>
 		</table>
 	</form>
-        <h2>Insurance Details</h2>
+        <h2>Информация о страховании</h2>
     <form>
 		<table style="width:25%"> 
             <tr>
-			<td>Enter Record Id:</td>
+			<td>Введите идентификатор записи:</td>
 			<td><input type="text" id="id1" name="id1"></td>
 		  </tr>
             <tr>
-			<td> Is Insurance applicable?(yes/no):</td>
+			<td>Гражданство пациента:</td>
 			<td><input type="text" id="appl" name="appl"></td>
 		  </tr>
 		  <tr>
-			<td>Policy Number:</td>
+			<td>Номер полиса:</td>
 			<td><input type="text" id="pono" name="pono"></td>
 		  </tr>
 		   
 		   <tr>
-			<td>Insurer:</td>
+			<td>Страховая компания:</td>
 			<td><input type="text" id="ins" name="ins"></td>
 		  </tr>
             <tr>
-			<td>Policy Type:</td>
+			<td>Тип полиса:</td>
 			<td><input type="text" id="type" name="type"></td>
 		  </tr>
 		  <tr>
-			<td>Policy Limit:</td>
+			<td>Срок действия полиса:</td>
 			<td><input type="text" id="lim" name="lim"></td>
 		  </tr>           
 		  
@@ -983,95 +989,95 @@
 		
 		
 	</form>
-	<h2> Present Illness Details</h2>
+	<h2>Информация о текущем заболевении</h2>
     <form>
 		<table style="width:25%"> 
             <tr>
-			<td>Enter Record Id:</td>
+			<td>Введите идентификатор записи:</td>
 			<td><input type="text" id="id2" name="id2"></td>
 		  </tr>
             <tr>
-			<td> Complaints:</td>
+			<td>Жалобы:</td>
 			<td><input type="text" id="com" name="com"></td>
 		  </tr>
 		  <tr>
-			<td>Duation:</td>
+			<td>Продолжительность:</td>
 			<td><input type="text" id="dur" name="dur"></td>
 		  </tr>
 		</table>
 		
 	</form>
-	<h2> Past Illness Details</h2>
+	<h2>Информация о прошлых болезнях</h2>
     <form>
 		<table style="width:25%"> 
             <tr>
-			<td>Enter Record Id:</td>
+			<td>Введите идентификатор записи:</td>
 			<td><input type="text" id="id3" name="id3"></td>
 		  </tr>
             <tr>
-			<td> Family History:</td>
+			<td>Наследственные заболевания:</td>
 			<td><input type="text" id="fam" name="fam"></td>
 		  </tr>
 		  <tr>
-			<td>Personal History:</td>
+			<td>Индивидуальные заболевания:</td>
 			<td><input type="text" id="per" name="per"></td>
 		  </tr>
 		  <tr>
-			<td>Drug History:</td>
+			<td>История о принемаемых лекарствах:</td>
 			<td><input type="text" id="drug" name="drug"></td>
 		  </tr>
 		</table>
 		
 	</form>
-	<h2>Provisional Diagnosis Details</h2>
+	<h2>Информация о предварительном диагнозе</h2>
     <form>
 		<table style="width:25%"> 
             <tr>
-			<td>Enter Record Id:</td>
+			<td>Введите идентификатор записи:</td>
 			<td><input type="text" id="id4" name="id4"></td>
 		  </tr>
             <tr>
-			<td> Diagnosis Summary:</td>
+			<td>Диагноз:</td>
 			<td><input type="text" id="diag" name="diag"></td>
 		  </tr>
 		  <tr>
-			<td>Prescription:</td>
+			<td>Рекомендации:</td>
 			<td><input type="text" id="pre" name="pre"></td>
 		  </tr>
 		</table>
 		
 	</form>
 	
-        <h2>Treatment Summary</h2>
+        <h2>Результаты лечения</h2>
     <form>
 		<table style="width:25%"> 
             <tr>
-			<td>Enter Record Id:</td>
+			<td>Введите идентификато записи:</td>
 			<td><input type="text" id="id5" name="id5"></td>
 		  </tr>
             <tr>
-			<td> Treatment:</td>
+			<td>Лечение:</td>
 			<td><input type="text" id="treat" name="treat"></td>
 		  </tr>
 		  <tr>
-			<td>Date of Treatment:</td>
+			<td>Дата:</td>
 			<td><input type="text" id="date" name="date"></td>
 		  </tr>
 		   
 		   <tr>
-			<td>Treated Doctor Id:</td>
+			<td>Идентификатор, врача проводившего лечение:</td>
 			<td><input type="text" id="doc" name="doc"></td>
 		  </tr>
             <tr>
-			<td>Treated Hospital Id:</td>
+			<td>Идентификатор отделения, в котором проводилось лечение:</td>
 			<td><input type="text" id="hos" name="hos"></td>
 		  </tr>
 		  <tr>
-			<td>Discharge:</td>
+			<td>Выписка:</td>
 			<td><input type="text" id="dis" name="dis"></td>
 		  </tr>  
 			<tr>
-			<td>Follow Up:</td>
+			<td>Выводы:</td>
 			<td><input type="text" id="fol" name="fol"></td>
 		  </tr>	
 		</table>
@@ -1081,7 +1087,7 @@
 		 <form>
 		<table style="width:25%"> 
 		<tr>
-		  <td><input type="button" onclick="insu_details()" value="Submit"></td>
+		  <td><input type="button" onclick="insu_details()" value="Отправить"></td>
 		  </tr>
 		  </table>
 		

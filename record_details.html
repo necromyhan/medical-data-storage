@@ -1,10 +1,16 @@
 <link rel="stylesheet" type="text/css" href="https://necromyhan.github.io/medical-data-storage/style.css">
 <html>
 <head>
-<title>Patient Medical Record details</title>
+<title>Просмотр записей пациентов</title>
 </head>
     <body>
-	<p><a href="hospital.html"><button type="submit" class="hidden" style='margin-right:16px'>Hospital Registration</button></a><a href="doctor.html"><button type="submit" class="hidden" style='margin-right:16px'>Doctor Registration</button></a><a href="patient.html"><button type="submit" class="hidden" style='margin-right:16px'>Patient Registration</button></a><a href="patient_details.html"><button type="submit" class="hidden" style='margin-right:16px'>View Patient Details</button></a><a href="examine_details.html"><button type="submit" class="hidden" style='margin-right:16px'>View Patient Examine details</button></a></p>
+				
+	<div class="header">
+		<h1>Цифровое хранилище медицинских данных на базе блокчейн</h1>
+		<p>Диагностический центр №1</p>
+	</div>
+	
+	<p><a href="hospital.html"><button type="submit" class="hidden" style='margin-right:16px'>Регистрация отделения</button></a><a href="doctor.html"><button type="submit" class="hidden" style='margin-right:16px'>Регистрация врача</button></a><a href="patient.html"><button type="submit" class="hidden" style='margin-right:16px'>Регистрация пациента</button></a><a href="patient_details.html"><button type="submit" class="hidden" style='margin-right:16px'>Просмотр информации о пациентах</button></a><a href="examine_details.html"><button type="submit" class="hidden" style='margin-right:16px'>Результаты обселований</button></a></p>
       
         
         <script src="https://cdn.jsdelivr.net/npm/web3@1.2.8/dist/web3.js"></script>
@@ -936,103 +942,103 @@
 		
 		
         </script>
-		 <h3>To update details of a patient medical record  <a href="record.html">Click Here</a></h3>
+		 <h3>Для обновления записей пациента <a href="record.html">нажмите здесь</a></h3>
 		
-<h3>Previous dates of medical record updated</h3>
+<h3>Даты предыдущих обновлений результатов обследования</h3>
         <form>
 		<table style="width:25%">
 		  <tr>
-			<td>Enter Patient Id:</td>
+			<td>Введите идентификатор пациента</td>
 			<td><input type="text" id="tid1" name="tid1"></td>
 		  </tr>
-		  <tr><td><input type="button" onclick="date_details()" value="Get Details"></td></tr>
+		  <tr><td><input type="button" onclick="date_details()" value="Получить информацию"></td></tr>
             <tr>
-			<td> Dates:</td>
+			<td>Дата:</td>
 			<td><div id="get_dates1"></div></td>
 		  </tr>
 		  
 		</table>
         </form>  
 		
-		<h2>Patient Medical Record Details</h2>
+		<h2>Информация о записи пациента</h2>
         <tr>
-			<td>Enter Record Id:</td>
+			<td>Введите идентификатор пациента:</td>
 			<td><input type="text" id="tid" name="tid"></td>
 		  </tr>
 		  
-		 <tr><td><input type="button" onclick="get_details()" value="Get Details"></td></tr>
+		 <tr><td><input type="button" onclick="get_details()" value="Получить информацию"></td></tr>
 		 
-        <h2>Insurance Details</h2>
+        <h2>Информация о страховании</h2>
     <form>
 		<table style="width:25%"> 
             
             <tr>
-			<td> Is Insurance applicable?(yes/no):</td>
+			<td>Гражданство пациента:</td>
 			<td><div id="get_appl"></div></td>
 		  </tr>
 		  <tr>
-			<td>Policy Number:</td>
+			<td>Номер полиса:</td>
 			<td><div id="get_pono"></div></td>
 		  </tr>
 		   
 		   <tr>
-			<td>Insurer:</td>
+			<td>Страховая компания:</td>
 			<td><div id="get_ins"></div></td>
 		  </tr>
             <tr>
-			<td>Policy Type:</td>
+			<td>Тип полиса:</td>
 			<td><div id="get_type"></div></td>
 		  </tr>
 		  <tr>
-			<td>Policy Limit:</td>
+			<td>Срок действия полиса:</td>
 			<td><div id="get_lim"></div></td>
 		  </tr> 
 		</table>
 		
 		
 	</form>
-	<h2> Present Illness Details</h2>
+	<h2>Информация о текущем заболевении</h2>
     <form>
 		<table style="width:25%"> 
             
             <tr>
-			<td> Complaints:</td>
+			<td>Жалобы:</td>
 			<td><div id="get_com"></div></td>
 		  </tr>
 		  <tr>
-			<td>Duation:</td>
+			<td>Продолжительность:</td>
 			<td><div id="get_dur"></div></td>
 		  </tr>
 		</table>
 	</form>
-	<h2> Past Illness Details</h2>
+	<h2>Информация о прошлых болезнях</h2>
     <form>
 		<table style="width:25%"> 
            
             <tr>
-			<td> Family History:</td>
+			<td>Наследственные заболевания:</td>
 			<td><div id="get_fam"></div></td>
 		  </tr>
 		  <tr>
-			<td>Personal History:</td>
+			<td>Индивидуальные заболевания:</td>
 			<td><div id="get_per"></div></td>
 		  </tr>
 		  <tr>
-			<td>Drug History:</td>
+			<td>История о принемаемых лекарствах:<</td>
 			<td><div id="get_drug"></div></td>
 		  </tr>
 		  </table>
 	</form>
-	<h2> Provisional Diagnosis Details</h2>
+	<h2>Информация о предварительном диагнозе</h2>
     <form>
 		<table style="width:25%"> 
            
             <tr>
-			<td> Diagnosis Summary:</td>
+			<td>Диагноз:</td>
 			<td><div id="get_diag"></div></td>
 		  </tr>
 		  <tr>
-			<td>Prescription:</td>
+			<td>Рекомендации:</td>
 			<td><div id="get_pre"></div></td>
 		  </tr>
 		</table>
@@ -1040,33 +1046,33 @@
 		
 	</form>
 	
-        <h2>Treatment Summary</h2>
+        <h2>Результаты лечения</h2>
     <form>
 		<table style="width:25%"> 
             
             <tr>
-			<td> Treatment:</td>
+			<td>Лечения</td>
 			<td><div id="get_treat"></div></td>
 		  </tr>
 		  <tr>
-			<td>Date of Treatment:</td>
+			<td>Date Дата:</td>
 			<td><div id="get_date"></div></td>
 		  </tr>
 		   
 		   <tr>
-			<td>Treated Doctor Id:</td>
+			<td>Идентификатор, врача проводившего лечение:</td>
 			<td><div id="get_doc"></div></td>
 		  </tr>
             <tr>
-			<td>Treated Hospital Id:</td>
+			<td>Идентификатор отделения, в котором проводилось лечение:</td>
 			<td><div id="get_hos"></div></td>
 		  </tr>
 		  <tr>
-			<td>Discharge:</td>
+			<td>Выписка:</td>
 			<td><div id="get_dis"></div></td>
 		  </tr>  
 			<tr>
-			<td>Follow Up:</td>
+			<td>Выводы:</td>
 			<td><div id="get_fol"></div></td>
 		  </tr>		  
 		</table>

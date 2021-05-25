@@ -1,12 +1,12 @@
 <link rel="stylesheet" type="text/css" href="https://necromyhan.github.io/medical-data-storage/style.css">
 <html>
 <head>
-<title>Patient body examine details</title>
+<title>Результаты обследований</title>
 </head>
     <body>
-	<p><a href="hospital.html"><button type="submit" class="hidden" style='margin-right:16px'>Hospital Registration</button></a><a href="doctor.html"><button type="submit" class="hidden" style='margin-right:16px'>Doctor Registration</button></a><a href="patient.html"><button type="submit" class="hidden" style='margin-right:16px'>Patient Registration</button></a><a href="patient_details.html"><button type="submit" class="hidden" style='margin-right:16px'>View Patient Details</button></a><a href="record_details.html"><button type="submit" class="hidden" style='margin-right:16px'>View Medical Record</button></a><a href="examine_details.html"><button type="submit" class="hidden" style='margin-right:16px'>View Patient Examine details</button></a></p>
+	<p><a href="hospital.html"><button type="submit" class="hidden" style='margin-right:16px'>Регистрация отделения</button></a><a href="doctor.html"><button type="submit" class="hidden" style='margin-right:16px'>Регистрация врача</button></a><a href="patient.html"><button type="submit" class="hidden" style='margin-right:16px'>Регистрация врача</button></a><a href="patient_details.html"><button type="submit" class="hidden" style='margin-right:16px'>Просмотр информации о пациентах</button></a><a href="record_details.html"><button type="submit" class="hidden" style='margin-right:16px'>Просмотр записей пациентов</button></a><a href="examine_details.html"><button type="submit" class="hidden" style='margin-right:16px'>Результаты обследований</button></a></p>
       
-        <h1>Patient Body examine details</h1>
+        <h1>Результаты обследований пацинета</h1>
         <script src="https://cdn.jsdelivr.net/npm/web3@1.2.8/dist/web3.js"></script>
     <script>	
 	
@@ -875,126 +875,126 @@
 		
         </script>
 
-       <h2>Previous dates of medical record updated</h2>
+       <h2>Даты предыдущих обновлений результатов обследования</h2>
     <form>
 		<table style="width:25%"> 
             <tr>
-			<td>Enter Patient Id:</td>
+			<td>Введитие идентификатор пацинета:</td>
 			<td><input type="text" id="id0" name="id0"></td>
 		  </tr>
             <tr>
-			<td> Dates:</td>
+			<td>Дата:</td>
 			<td><input type="text" id="dates1" name="dates1"></td>
 		  </tr>
 		  <tr>			
-		  <td><input type="button" onclick="prev_details()" value="Submit"></td>
+		  <td><input type="button" onclick="prev_details()" value="Отправить"></td>
 		  </tr>
 		</table>
 		
 	</form>
        
-        <h2>Investigations</h2>
+        <h2>Анализы</h2>
     <form>
 		<table style="width:25%"> 
             <tr>
-			<td>Enter Record Id:</td>
+			<td>Введитие идентификатор пацинета</td>
 			<td><input type="text" id="id1" name="id1"></td>
 		  </tr>
             <tr>
-			<td>Blood Test:</td>
+			<td>Анализ крови:</td>
 			<td><input type="text" id="blood" name="blood"></td>
 		  </tr>
 		  <tr>
-			<td>Urine Test:</td>
+			<td>Анализ мочи:</td>
 			<td><input type="text" id="uri" name="uri"></td>
 		  </tr>
 		   
 		   <tr>
-			<td>ECG:</td>
+			<td>ЭКГ:</td>
 			<td><input type="text" id="ecg" name="ecg"></td>
 		  </tr>
             <tr>
-			<td>MRI Scan:</td>
+			<td>МРТ:</td>
 			<td><input type="text" id="mri" name="mri"></td>
 		  </tr>
 		  <tr>
-			<td>CT Scan:</td>
+			<td>Компьютерная томография:</td>
 			<td><input type="text" id="ct" name="ct"></td>
 		  </tr> 
 <tr>
-			<td>X-ray:</td>
+			<td>Флюрография:</td>
 			<td><input type="text" id="xray" name="xray"></td>
 		  </tr> 
 <tr>
-			<td>Lab Test(if any other):</td>
+			<td>Другие лабораторные исследования:</td>
 			<td><input type="text" id="lab" name="lab"></td>
 		  </tr>           
 		  
 		</table>
 	
-	<h2> General Examination</h2>
+	<h2>Физическая диагностика</h2>
     <form>
 		<table style="width:25%"> 
             <tr>
-			<td>Enter Record Id:</td>
+			<td>Введитие идентификатор пацинета:</td>
 			<td><input type="text" id="id2" name="id2"></td>
 		  </tr>
             <tr>
-			<td> Built:</td>
+			<td>Тип телосложения:</td>
 			<td><input type="text" id="built" name="built"></td>
 		  </tr>
 		  <tr>
-			<td>Nourishment:</td>
+			<td>Питание:</td>
 			<td><input type="text" id="nou" name="nou"></td>
 		  </tr>
 		  <tr>
-			<td>Eyes:</td>
+			<td>Глаза:</td>
 			<td><input type="text" id="eyes" name="eyes"></td>
 		  </tr>
 		  <tr>
-			<td>Tongue:</td>
+			<td>Язык:</td>
 			<td><input type="text" id="ton" name="ton"></td>
 		  </tr>
 		  <tr>
-			<td>Pulse:</td>
+			<td>Пульс:</td>
 			<td><input type="text" id="pulse" name="pulse"></td>
 		  </tr>
 		  <tr>
-			<td>Blood Pressure:</td>
+			<td>Давление:</td>
 			<td><input type="text" id="bp" name="bp"></td>
 		  </tr>
 		  <tr>
-			<td>Temperature:</td>
+			<td>Температура:</td>
 			<td><input type="text" id="temp" name="temp"></td>
 		  </tr>
 		  <tr>
-			<td>Respiratory rate:</td>
+			<td>Частота дыхания:</td>
 			<td><input type="text" id="res" name="res"></td>
 		  </tr>
 		  
 		</table>
 		
-	<h2> Systemic Examination</h2>
+	<h2>Систематическиая диагностика</h2>
     <form>
 		<table style="width:25%"> 
             <tr>
-			<td>Enter Record Id:</td>
+			<td>Введите идентификатор пацинета</td>
 			<td><input type="text" id="id3" name="id3"></td>
 		  </tr>
             <tr>
-			<td>CVS:</td>
+			<td>Центральная нервная система:</td>
 			<td><input type="text" id="cvs" name="cvs"></td>
 		  </tr>
 		  <tr>
-			<td>CNS:</td>
+			<td>Система кровообращения:</td>
 			<td><input type="text" id="cns" name="cns"></td>
 		  </tr>
 		   <tr>
-			<td>RS:</td>
+			<td>Дыхательная система:</td>
 			<td><input type="text" id="rs" name="rs"></td>
 		  </tr>
 		   <tr>
-			<td>Abdomen System:</td>
+			<td>Желудочно-кишечный тракт:</td>
 			<td><input type="text" id="abs" name="abs"></td>
 		  </tr>	  
 		 
@@ -1004,11 +1004,11 @@
 		  <form>
 		<table style="width:25%"> 
          <tr>
-		  <td><input type="button" onclick="inv_details()" value="Submit"></td>
+		  <td><input type="button" onclick="inv_details()" value="Отправить"></td>
 		  </tr>
 		</table>
 		
-		<h4> Transaction Id: <a href=""><div id="result"></div></a></h4> 
+		<h4>Идентификатор транзакции: <a href=""><div id="result"></div></a></h4> 
 	</form>
     </body>
 </html>

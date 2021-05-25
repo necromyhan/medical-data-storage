@@ -4,7 +4,13 @@
 <title>Register Patient</title>
 </head>
     <body>
-	<p><a href="hospital.html"><button type="submit" class="hidden" style='margin-right:16px'>Hospital Registration</button></a><a href="doctor.html"><button type="submit" class="hidden" style='margin-right:16px'>Doctor Registration</button></a><a href="patient_details.html"><button type="submit" class="hidden" style='margin-right:16px'>View Patient Details</button></a><a href="record_details.html"><button type="submit" class="hidden" style='margin-right:16px'>View Medical Record</button></a><a href="examine_details.html"><button type="submit" class="hidden" style='margin-right:16px'>View Patient Examine details</button></a></p>
+			
+	<div class="header">
+		<h1>Цифровое хранилище медицинских данных на базе блокчейн</h1>
+		<p>Диагностический центр №1</p>
+	</div>
+	
+	<p><a href="hospital.html"><button type="submit" class="hidden" style='margin-right:16px'>Регистрация отделения</button></a><a href="doctor.html"><button type="submit" class="hidden" style='margin-right:16px'>Регистрация врача</button></a><a href="patient_details.html"><button type="submit" class="hidden" style='margin-right:16px'>Просмотр информации о пациентах</button></a><a href="record_details.html"><button type="submit" class="hidden" style='margin-right:16px'>Просмотр записей пациентов</button></a><a href="examine_details.html"><button type="submit" class="hidden" style='margin-right:16px'>Результаты обследования</button></a></p>
       
         <h1>Patient Registration</h1>
         <script src="https://cdn.jsdelivr.net/npm/web3@1.2.8/dist/web3.js"></script>
@@ -259,72 +265,72 @@
         </script>
 
        
-        <h2>Register Patient</h2>
+        <h2>Регистрация пациента</h2>
     <form>
 		<table style="width:25%"> 
             <tr>
-			<td>Enter Patient Id:</td>
+			<td>Введите идентификатор пациента:</td>
 			<td><input type="text" id="id1" name="id1"></td>
 		  </tr>
             <tr>
-			<td> Patient Name:</td>
+			<td>Имя:</td>
 			<td><input type="text" id="name1" name="name1"></td>
 		  </tr>
 		  <tr>
-			<td>Age:</td>
+			<td>Возраст:</td>
 			<td><input type="text" id="age" name="age"></td>
 		  </tr>
 		   
 		   <tr>
-			<td>Gender:</td>
+			<td>Пол:</td>
 			<td><input type="text" id="gen" name="gen"></td>
 		  </tr>
             <tr>
-			<td>Height(in ft):</td>
+			<td>Рост(см):</td>
 			<td><input type="text" id="hght" name="hght"></td>
 		  </tr>
 		  <tr>
-			<td>Weight(in kg):</td>
+			<td>Вес(кг):</td>
 			<td><input type="text" id="weig" name="weig"></td>
 		  </tr>
 		  <tr>
-			<td>Address:</td>
+			<td>Домашний адресс:</td>
 			<td><input type="text" id="addr" name="addr"></td>
 		  </tr>
 		  <tr>
-			<td>Phone Number:</td>
+			<td>Номер телефона:</td>
 			<td><input type="text" id="pno" name="pno"></td>
 		  </tr>
 		  <tr>
-			<td>Email Id:</td>
+			<td>Email-адресс:</td>
 			<td><input type="text" id="email" name="email"></td>
 		  </tr>
 		  <tr>
-			<td>Date:</td>
+			<td>Дата регистрации:</td>
 			<td><input type="text" id="date" name="date"></td>
 		  </tr>
           		 
 		</table>
 		
 	</form>
-	<h2> Patient's Attendant Details</h2>
+	<h2>Попечитель (если есть)</h2>
     <form>
 		<table style="width:25%"> 
             <tr>
-			<td>Enter Patient Id:</td>
+			<td>Идентификатор пациента:</td>
 			<td><input type="text" id="id2" name="id2"></td>
 		  </tr>
             <tr>
-			<td> Attendant Name:</td>
+			<td>Имя попечителя:</td>
 			<td><input type="text" id="aname1" name="aname1"></td>
 		  </tr>
 		  <tr>
-			<td>Attendant Relation:</td>
+			<td>Родство:</td>
 			<td><input type="text" id="rel" name="rel"></td>
 		  </tr>
 		   
 		   <tr>
-			<td>Phone Number:</td>
+			<td>Номер телефона:</td>
 			<td><input type="text" id="apno" name="apno"></td>
 		  </tr>
                       
@@ -333,12 +339,12 @@
 		  <form>
 		<table style="width:25%">
 		  <tr>
-			<td><input type="button" onclick="add_details()" value="Register"></td>
+			<td><input type="button" onclick="add_details()" value="Регистрация"></td>
 		  </tr>
 		  </table>
 		</form>
 		
 	
-        <h3>To get details of a patient  <a href="patient_details.html">Click Here</a></h3>
+        <h3>Чтобы посмотреть информацию о пациенте <a href="patient_details.html">нажмите здесь</a></h3>
     </body>
 </html>
