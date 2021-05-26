@@ -4,10 +4,10 @@ src: url('Proxima_Nova_Condensed_Black.otf';
 }
 
 body {
-  font: 16px;
+  font: 16px arial;
   background-image: url("https://raw.githubusercontent.com/necromyhan/medical-data-storage/main/bg2.png");
   color:  #0b4d8f;
-  font-family: arial;
+  
 }  
 .header {
    position: absolute;
