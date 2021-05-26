@@ -1,6 +1,6 @@
 @font-face {
 font-family: 'brab';
-src: url("...medical-data-storage/Proxima_Nova_Condensed_Black.otf");
+src: url('Proxima_Nova_Condensed_Black.otf';
 }
 
 body {
@@ -10,7 +10,7 @@ body {
   font-family: brab;
 }  
 .header {
-	position: absolute;
+   position: absolute;
    top: 0;
    width: 100%;
    margin: 0;
@@ -22,7 +22,7 @@ body {
    left: 0px;
    margin-left: 0;   
    color: white;
-   font-size: 10px;
+   font-size: 13px;
 }
 .hidden{
     background-color: white; 
