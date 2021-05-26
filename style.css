@@ -7,7 +7,7 @@ body {
   font: 16px;
   background-image: url("https://raw.githubusercontent.com/necromyhan/medical-data-storage/main/bg2.png");
   color:  #0b4d8f;
-  font-family: arial;
+  font-family: brab;
 }  
 .header {
    position: absolute;
@@ -22,7 +22,7 @@ body {
    left: 0px;
    margin-left: 0;   
    color: white;
-   font-size: 14px;
+   font-size: 13px;
 }
 .hidden{
     background-color: white; 
