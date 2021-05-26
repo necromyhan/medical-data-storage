@@ -1,8 +1,14 @@
+@font-face {
+font-family: 'brab';
+src: url("...medical-data-storage/Proxima_Nova_Condensed_Black.otf");
+}
+
 body {
-  font: 16px Arial, sans-serif;
+  font: 16px;
   background-image: url("https://raw.githubusercontent.com/necromyhan/medical-data-storage/main/bg2.png");
   color:  #0b4d8f;
-} 
+  font-family: brab;
+}  
 .header {
 	position: absolute;
    top: 0;
