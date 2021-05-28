@@ -63,20 +63,12 @@ input[type=button]:hover{
     color: white;
 }
 
-footer {
-  
-    left: 0; bottom: 0; /* Левый нижний угол */
-    background-color: #3076d1; /* Цвет текста */
-    width: 100%; /* Ширина слоя */
-	height: 65px;
-	color: white;
-
-	margin: -100px auto 0;
-	height: 100px;
-	position: relative;
-   }
-   
-   #foot{
-	   text-align: center;
-	   margin: 20px;
-   }
+#foot {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
