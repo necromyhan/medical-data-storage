@@ -26,7 +26,7 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 13px;
+    font-size: 11px;
     margin: 4px 2px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
@@ -42,6 +42,7 @@ body {
 	margin-top: 90px;
 	position: relative;
 	text-align: center;
+	font-size: 11px;
 }
 	
 input[type=button], input[type=submit], input[type=reset] {
