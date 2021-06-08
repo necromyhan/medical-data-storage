@@ -9,22 +9,23 @@ pragma solidity >=0.4.22 <0.7.0;
 contract Patient {
     
     
-    mapping(uint256 => patient) patientlist;
+    
     mapping(uint256 =>attendant) attendantlist;
     
+    mapping(uint256 => patient) patientlist;
     
      struct patient{
-     string patient_name;
-     uint256 age;
-     string gender;
-     string height;
-     uint256 weight;
-     string patient_address;
-     uint256 phone_no;
-     string email_id;
-     uint256 date;
-     uint256 doctor_id;
-     uint256 hospital_id;
+       string patient_name;
+       uint256 age;
+       string gender;
+       string height;
+       uint256 weight;
+       string patient_address;
+       uint256 phone_no;
+       string email_id;
+       uint256 date;
+       uint256 doctor_id;
+       uint256 hospital_id;
      }
      patient p;
      
